@@ -1,0 +1,218 @@
+/*variables*/
+/*importando scss*/
+.navbar .navbar_nav {
+  display: flexbox;
+  flex-direction: row; }
+  .navbar .navbar_nav .nav-link {
+    align-self: stretch; }
+
+.proyecto_area {
+  display: grid;
+  max-width: 100%;
+  grid-template-areas: "proyecto1 proyecto2 proyecto";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  align-items: stretch; }
+
+.proyecto1 {
+  grid-area: proyecto1;
+  width: 100%; }
+
+.proyecto2 {
+  grid-area: proyecto2;
+  width: 100%; }
+
+.proyecto3 {
+  grid-area: proyecto3;
+  width: 100%; }
+
+.contacto {
+  display: flexbox;
+  flex-direction: row; }
+
+.footer .footer_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+@media only screen and (max-width: 576px) {
+  * {
+    padding: 5%; }
+  .header {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .proyecto_area {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas: "preyecto1" "proyecto2" "proyecto3";
+    grid-template-columns: 1fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    align-items: stretch; }
+  .proyecto1 {
+    grid-area: proyecto1;
+    width: 100%; }
+  .proyecto2 {
+    grid-area: proyecto2;
+    width: 100%; }
+  .proyecto3 {
+    grid-area: proyecto3;
+    width: 100%; }
+  .contacto {
+    display: flexbox;
+    flex-direction: row; } }
+
+* {
+  background-color: #150129; }
+
+.navbar navbar-expand-lg navbar-light bg-light {
+  color: lightgray;
+  font-family: "Montserrat", sans-serif;
+  border: none; }
+
+.navbar-expand-lg {
+  color: lightgray;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  display: flexbox; }
+  .navbar-expand-lg .navbar-brand {
+    color: lightgray; }
+  .navbar-expand-lg #navbarNav {
+    justify-content: left; }
+  .navbar-expand-lg .navbar-bar {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: left; }
+  .navbar-expand-lg .nav-item .nav-link {
+    font-family: "Montserrat", sans-serif;
+    color: lightgray; }
+    .navbar-expand-lg .nav-item .nav-link .nav-link:hover .nav-item:hover li:hover a:hover {
+      color: darkcyan;
+      font-style: oblique; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: lightgray; }
+  body form .form_contact {
+    display: flex;
+    flex-direction: column;
+    align-self: lef; }
+    body form .form_contact fieldset .formulario {
+      padding: 20px;
+      border: 5px; }
+      body form .form_contact fieldset .formulario legend, body form .form_contact fieldset .formulario h2, body form .form_contact fieldset .formulario .formulario_titulo {
+        font-family: "Playfair Display", serif 60px;
+        color: lightgray;
+        font-size: 25pt;
+        text-align: center; }
+      body form .form_contact fieldset .formulario label .formulario_dato {
+        font-family: "Montserrat", sans-serif; }
+      body form .form_contact fieldset .formulario input, body form .form_contact fieldset .formulario .boton {
+        background-color: darkcyan;
+        font-family: "Montserrat", sans-serif;
+        color: #150129; }
+
+.work_title {
+  text-align: center;
+  text-transform: lowercase;
+  text-transform: none;
+  color: darkcyan;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  position: inherit; }
+
+/*transiciones/transformaciones*/
+.work_item:hover {
+  transform: scale(2, 2) !important;
+  transition-duration: 2s; }
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #150129; }
+
+body {
+  background-color: #150129; }
+  body .header .header_title {
+    color: darkcyan;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font: weight 900px;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-top: 20pt;
+    margin-top: 100pt;
+    margin-bottom: 50pt; }
+  body .header .header_fraseMarca {
+    text-align: center;
+    text-transform: lowercase;
+    text-transform: none;
+    color: darkcyan;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+    font-weight: normal;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    position: inherit;
+    padding-bottom: 10%; }
+  body .proyecto_area {
+    padding-left: 5%;
+    padding-right: 5%; }
+    body .proyecto_area .titulo_proyectos {
+      font-family: "Playfair Display", serif 60px;
+      font-weight: normal;
+      font-size: x-large;
+      font-style: normal;
+      font-variant: normal;
+      text-align: left;
+      text-decoration: underline;
+      text-transform: capitalize;
+      color: lightgray;
+      padding-bottom: 1%; }
+    body .proyecto_area .proyecto_descrip {
+      font-family: "Montserrat", sans-serif;
+      font-weight: lighter;
+      font-size: normal;
+      font-style: normal;
+      text-transform: initial;
+      text-align: left;
+      text-decoration: initial;
+      line-height: 150%;
+      color: lightgray; }
+    body .proyecto_area .proyecto-learnMore a {
+      font-family: "Montserrat", sans-serif;
+      font-style: oblique;
+      font-size: 60%;
+      color: lightgray; }
+    body .proyecto_area .proyecto-learnMore a:hover {
+      color: darkcyan;
+      transform: rotate(10deg); }
+    body .proyecto_area .contacto p {
+      text-align: center;
+      text-transform: lowercase;
+      text-transform: none;
+      color: darkcyan;
+      font-family: 'Montserrat', sans-serif;
+      font-style: oblique;
+      font-weight: normal;
+      word-spacing: 0px;
+      letter-spacing: 0px;
+      position: inherit;
+      padding-bottom: 10%; }
+  body .carousel-item active {
+    position: static;
+    justify-content: center; }
+  body .footer .footer_bar {
+    padding-top: 20%; }
+    body .footer .footer_bar .footer_item {
+      font-family: "Montserrat", sans-serif;
+      font-weight: lighter;
+      font-size: small;
+      color: lightgray;
+      padding: 10px; }
