@@ -1,0 +1,88 @@
+.navbar{
+    .navbar_nav{
+        display: flexbox;
+        flex-direction: row;
+
+        .nav-link{
+            align-self: stretch;
+        }
+    }
+}
+.proyecto_area {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas: 
+    "proyecto1 proyecto2 proyecto";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+
+    align-items: stretch;
+
+}
+.proyecto1 {
+    grid-area: proyecto1;
+    width: 100%;
+}
+.proyecto2 {
+    grid-area: proyecto2;
+    width: 100%;
+}
+.proyecto3 {
+    grid-area: proyecto3;
+    width:100%;
+}
+
+.contacto {
+    display: flexbox;
+    flex-direction: row;
+}
+
+.footer .footer_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+	*{padding: 5%;}
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .proyecto_area {
+        display: grid;
+        max-width: 100%;
+        grid-template-areas: 
+        "preyecto1"
+        "proyecto2"
+        "proyecto3";
+    
+        grid-template-columns: 1fr;
+        grid-column-gap: 1%;
+        grid-row-gap: 1%;
+    
+        align-items: stretch;
+    
+    }
+    .proyecto1 {
+        grid-area: proyecto1;
+        width: 100%;
+    }
+    .proyecto2 {
+        grid-area: proyecto2;
+        width: 100%;
+    }
+    .proyecto3 {
+        grid-area: proyecto3;
+        width:100%;
+    }
+    
+    .contacto {
+        display: flexbox;
+        flex-direction: row;
+    }
+}

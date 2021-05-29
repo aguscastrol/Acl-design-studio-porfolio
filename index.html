@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,500&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./css/stilos.css">
+    <!--titulo de pagina-->
+    <title>ACL Design- Home</title>
+</head>
+<body>
+    <!--barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ACL Design Studio</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="true" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/nuestroEstudio.html">Nuestro Estudio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/servicios.html">Servicios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--header de la pagina, presentacion de marca-->
+    <div class="header">
+        <h1 class="header_title">Acl Design Studio</h1>
+        <h3 class="header_fraseMarca">Diseño, usabilidad y funcionalidad para tu marca</h3>
+    </div>
+            <!--algunos proyectos-->
+            <div  class="proyecto_area">
+                <div>
+                    <div class="proyecto1"> <!--agregar fotos a cada proyecto, xzona de scroll horizontal talvez-->
+                        <h2 class="titulo_proyectos">Spotigram</h2>
+                        <p class="proyecto_descrip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus tempora ipsum accusantium maioresquasi molestias sit corrupti quia expedita. Neque?</p>
+                        <p class="proyecto-learnMore"><a href="./views/portfolio.html">Learn more...</a></p>
+                    </div>
+                </div>
+                <div >
+                    <div class="proyecto2">
+                        <h2 class="titulo_proyectos">CosplayLab</h2>
+                        <p class="proyecto_descrip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus tempora ipsum accusantium maioresquasi molestias sit corrupti quia expedita. Neque?</p>
+                        <p class="proyecto-learnMore"><a href="./views/portfolio.html">Learn more...</a></p>
+                    </div>
+                </div>
+                <div >
+                    <div class="proyecto3">
+                        <h2 class="titulo_proyectos">Antologias</h2>
+                        <p class="proyecto_descrip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus tempora ipsum accusantium maioresquasi molestias sit corrupti quia expedita. Neque?</p>
+                        <p class="proyecto-learnMore"><a href="./views/portfolio.html">Learn more...</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--a la apgina de contactos o algun form-->
+    <div class="contacto">
+        <p class="contacto">Contctanos para averiguar cual es el mejor servicio para vos!</p>
+    </div>
+    
+    
+
+    <!--carrusel-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Carrusel/david-pupaza-Q9-QEy1_jYI-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Carrusel/laura-adai-3qvLDuQMF1M-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Carrusel/madison-bracaglia-FT7bLoQcF_8-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Carrusel/shahram-anhari-C6nazHzurKY-unsplash.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+<!--footer-->
+<div class="footer">
+    <footer class="footer_bar">
+        <div>
+            <h5 class="footer_item">contacto/redes</h3>
+        </div>
+        <div>
+            <h5 class="footer_item">logo</h3>
+        </div>
+        <div>
+            <h5 class="footer_item">2021, todos los derechos reservados</h3>
+        </div>
+    </footer>
+</div>
+
+<!--bunddle JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

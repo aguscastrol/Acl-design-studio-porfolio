@@ -1,0 +1,37 @@
+*{
+    background-color: $mainColor;
+}
+.navbar navbar-expand-lg navbar-light bg-light {
+    color:$normal;
+    font-family: $common-font;
+    border:none;
+    
+}
+.navbar-expand-lg {
+    color: $normal;
+    font-family: $common-font;
+    border: none;
+    display: flexbox;
+
+    .navbar-brand {
+        color: $normal;
+    }
+
+    #navbarNav {
+        justify-content: left;
+    }
+    .navbar-bar {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: left;
+    }
+    .nav-item .nav-link {
+        font-family: $common-font;
+        color: $normal;
+        .nav-link:hover .nav-item:hover li:hover a:hover{
+        color: $highlight-color;
+        font-style: oblique;
+        }
+    
+    }
+}

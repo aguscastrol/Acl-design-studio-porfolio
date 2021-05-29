@@ -1,0 +1,33 @@
+body{
+
+    font-family: $common-font;
+    color: $normal;
+
+    form .form_contact{
+        display: flex;
+        flex-direction: column;
+        align-self: lef;
+        
+
+        fieldset .formulario {
+            padding:20px;
+            border: 5px;
+
+            legend, h2, .formulario_titulo {
+                font-family: $title-font;
+                color: $normal;
+                font-size: 25pt;
+
+                text-align: center;
+            }
+            label .formulario_dato{
+                font-family: $common-font;
+            }
+            input, .boton {
+                background-color:$highlight-color;
+                font-family: $common-font;
+                color: $mainColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+/*variables*/
+$mainColor:rgb(21, 1, 41);
+$normal: lightgray;
+$highlight-color: darkcyan;
+$common-font: 'Montserrat', sans-serif;
+$title-font:'Playfair Display', serif 60px;
+
+/*importando scss*/
+
+@import "./grids-home";
+@import "./custom-boostrap";
+@import "./contacto-stilos";
+@import "./portfolio-stilos";
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: $mainColor;
+}
+body{
+    background-color: $mainColor; 
+    .header{
+        .header_title {
+            color:  darkcyan;
+        
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            font: weight 900px;
+            font-style: oblique;
+        
+            text-align: center;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding-top: 20pt;
+            
+            margin-top: 100pt;    margin-bottom: 50pt;
+            }
+        .header_fraseMarca {
+            text-align: center;
+            text-transform: lowercase;
+            text-transform: none;    
+            color: darkcyan;
+            font-family: 'Montserrat', sans-serif;
+            font-style: oblique;
+            font-weight: normal;
+            word-spacing: 0px;
+            letter-spacing: 0px;
+            position: inherit;
+
+            padding-bottom: 10%;
+            }
+        }
+        .proyecto_area {
+            padding-left: 5%;
+            padding-right: 5%;
+
+            .titulo_proyectos {
+                font-family: $title-font;
+                font-weight: normal;
+                font-size: x-large;
+                font-style: normal;
+                font-variant: normal;
+                
+                text-align: left;
+                text-decoration: underline;
+                text-transform: capitalize;
+                
+                color:$normal;
+                padding-bottom: 1%;
+            }
+            .proyecto_descrip {
+                font-family: $common-font;
+                font-weight: lighter;
+                font-size: normal;
+                font-style: normal;
+            
+                text-transform: initial;
+                text-align: left;
+                text-decoration: initial;
+                line-height: 150%;
+                
+                color:$normal
+            }
+            .proyecto-learnMore {
+                a{
+                    font-family: $common-font;
+                    font-style: oblique;
+                    font-size: 60%;
+                    color: $normal;
+                }
+                a:hover {
+                    color:$highlight-color;
+
+                    transform: rotate(10deg);
+                }
+            }
+            .contacto p {
+            text-align: center;
+            text-transform: lowercase;
+            text-transform: none;    
+            color: darkcyan;
+            font-family: 'Montserrat', sans-serif;
+            font-style: oblique;
+            font-weight: normal;
+            word-spacing: 0px;
+            letter-spacing: 0px;
+            position: inherit;
+
+            padding-bottom: 10%;
+            }
+        }   
+        .carousel-item active {
+            position: static;
+            justify-content: center;
+        }
+        
+    
+    .footer .footer_bar {
+        padding-top:20%;
+        .footer_item{
+            font-family: $common-font;
+            font-weight: lighter;
+            font-size: small;
+            color: $normal;
+            padding: 10px;
+        }
+        
+    }
+    
+        
+}
