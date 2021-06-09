@@ -94,6 +94,11 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: lightgray; }
+  body .contacto-header {
+    font-family: "Montserrat", sans-serif;
+    font-style: oblique;
+    justify-content: center;
+    align-items: center; }
   body form .form_contact {
     display: flex;
     flex-direction: column;

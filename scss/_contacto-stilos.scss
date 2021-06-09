@@ -3,6 +3,14 @@ body{
     font-family: $common-font;
     color: $normal;
 
+    .contacto-header {
+        font-family: $common-font;
+        font-style: oblique;
+        
+        justify-content: center;
+        align-items: center;
+    }
+
     form .form_contact{
         display: flex;
         flex-direction: column;
