@@ -268,5 +268,16 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aguscastrol/Acl-design-studio-porfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aguscastrol/Acl-design-studio-porfolio/issues"
+  },
+  "homepage": "https://github.com/aguscastrol/Acl-design-studio-porfolio#readme",
+  "description": ""
 }
