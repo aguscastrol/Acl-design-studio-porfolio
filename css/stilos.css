@@ -130,6 +130,22 @@ body {
   transform: scale(2, 2) !important;
   transition-duration: 2s; }
 
+.tabla-servicios {
+  display: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  text-transform: lowercase;
+  text-transform: none;
+  color: lightgray; }
+  .tabla-servicios .tabla-titulo {
+    font-family: "Playfair Display", serif 60px;
+    color: darkcyan; }
+
+.quienes-imagen {
+  width: 100%;
+  height: 100%;
+  padding: 25pt; }
+
 * {
   margin: 0;
   padding: 0;

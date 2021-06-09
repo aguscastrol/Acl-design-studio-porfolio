@@ -1,0 +1,17 @@
+.tabla-servicios { 
+    display: center;
+    font-family: $common-font;
+    text-align: left;
+    text-transform: lowercase;
+    text-transform: none;    
+    color: $normal;
+    .tabla-titulo {
+        font-family: $title-font;
+        color: $highlight-color;
+    }
+}
+.quienes-imagen{
+    width: 100%;
+    height: 100%;
+    padding: 25pt;
+}
